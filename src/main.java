@@ -23,6 +23,7 @@ public class main extends javax.swing.JFrame {
     private final String url = "jdbc:postgresql://localhost/postgresqgis";
     private final String user = "postgres";
     private final String password = "madhav";
+    public String[] buildingString = {"GardenClub", "MapleSquare", "Richlynn_Apt", "Brazos House", "Arlington Hall","Lipscomb Hall","BSM","Tric","Nedderman Hall"};
     Connection conn = null;
 
     /**
@@ -107,11 +108,16 @@ public class main extends javax.swing.JFrame {
 
         jLabel4.setText("Choose the Building Name");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MapleSquare", "Tric", "BSM", "Richlynn_Apt", "GardenClub", "Brazos House", "Thermal Plant", "UTA Planetarium", "Health Center", "College Hall", "Arlington Hall", "University College", "Lipscomb Hall", "Woolf Hall", "GeoScience Building", "Science Laboratory", "Engineering Research Building", "Nedderman Hall", "Texas hall", "Davis Hall", "Nanofab Building", "Campus Center", "Trinity House", "Maverick Activity Center", "A_Meadow_Run5", "A_Swift_Center", "A_Meadow_Run3", "A_Meadow_Run4", "A_Meadow_Run2", "A_Meadow_Run1", "A_Meadow_Run_Post_Box_1", "MEADOW_RUN_A", "MEADOW_RUN_B", "MEADOW_RUN_C", "MEADOW_RUN_D", "ARBOR_OAKS_A", "ARBOR_OAKS_B", "ARBOR_OAKS_C", "ARBOR_OAKS_D", "ARBOR_OAKS_E", "UNIVERSITY_VILLAGE_A", "UNIVERSITY_VILLAGE_B", "UNIVERSITY_VILLAGE_C", "UNIVERSITY_VILLAGE_D", "UNIVERSITY_VILLAGE_E", "UNIVERSITY_VILLAGE_F", "Physical Education", "OffCampus House 1", "OffCampus House 2", "TimberBrookBoundary", "TimberBrook400", "TimberBrook402", "TimberBrook404", "TimberBrook408", "TimberBrook410", " " }));
 
         jLabel5.setText("Query 2:");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MapleSquare", "Tric", "BSM", "Richlynn_Apt", "GardenClub", "Brazos House", "Thermal Plant", "UTA Planetarium", "Health Center", "College Hall", "Arlington Hall", "University College", "Lipscomb Hall", "Woolf Hall", "GeoScience Building", "Science Laboratory", "Engineering Research Building", "Nedderman Hall", "Texas hall", "Davis Hall", "Nanofab Building", "Campus Center", "Trinity House", "Maverick Activity Center", "A_Meadow_Run5", "A_Swift_Center", "A_Meadow_Run3", "A_Meadow_Run4", "A_Meadow_Run2", "A_Meadow_Run1", "A_Meadow_Run_Post_Box_1", "MEADOW_RUN_A", "MEADOW_RUN_B", "MEADOW_RUN_C", "MEADOW_RUN_D", "ARBOR_OAKS_A", "ARBOR_OAKS_B", "ARBOR_OAKS_C", "ARBOR_OAKS_D", "ARBOR_OAKS_E", "UNIVERSITY_VILLAGE_A", "UNIVERSITY_VILLAGE_B", "UNIVERSITY_VILLAGE_C", "UNIVERSITY_VILLAGE_D", "UNIVERSITY_VILLAGE_E", "UNIVERSITY_VILLAGE_F", "Physical Education", "OffCampus House 1", "OffCampus House 2", "TimberBrookBoundary", "TimberBrook400", "TimberBrook402", "TimberBrook404", "TimberBrook408", "TimberBrook410" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Choose the Building Name");
 
@@ -123,11 +129,11 @@ public class main extends javax.swing.JFrame {
 
         jLabel9.setText("Choose the Building Name");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MapleSquare", "Tric", "BSM", "Richlynn_Apt", "GardenClub", "Brazos House", "Thermal Plant", "UTA Planetarium", "Health Center", "College Hall", "Arlington Hall", "University College", "Lipscomb Hall", "Woolf Hall", "GeoScience Building", "Science Laboratory", "Engineering Research Building", "Nedderman Hall", "Texas hall", "Davis Hall", "Nanofab Building", "Campus Center", "Trinity House", "Maverick Activity Center", "A_Meadow_Run5", "A_Swift_Center", "A_Meadow_Run3", "A_Meadow_Run4", "A_Meadow_Run2", "A_Meadow_Run1", "A_Meadow_Run_Post_Box_1", "MEADOW_RUN_A", "MEADOW_RUN_B", "MEADOW_RUN_C", "MEADOW_RUN_D", "ARBOR_OAKS_A", "ARBOR_OAKS_B", "ARBOR_OAKS_C", "ARBOR_OAKS_D", "ARBOR_OAKS_E", "UNIVERSITY_VILLAGE_A", "UNIVERSITY_VILLAGE_B", "UNIVERSITY_VILLAGE_C", "UNIVERSITY_VILLAGE_D", "UNIVERSITY_VILLAGE_E", "UNIVERSITY_VILLAGE_F", "Physical Education", "OffCampus House 1", "OffCampus House 2", "TimberBrookBoundary", "TimberBrook400", "TimberBrook402", "TimberBrook404", "TimberBrook408", "TimberBrook410" }));
 
         jLabel10.setText("Choose the Building Name");
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MapleSquare", "Tric", "BSM", "Richlynn_Apt", "GardenClub", "Brazos House", "Thermal Plant", "UTA Planetarium", "Health Center", "College Hall", "Arlington Hall", "University College", "Lipscomb Hall", "Woolf Hall", "GeoScience Building", "Science Laboratory", "Engineering Research Building", "Nedderman Hall", "Texas hall", "Davis Hall", "Nanofab Building", "Campus Center", "Trinity House", "Maverick Activity Center", "A_Meadow_Run5", "A_Swift_Center", "A_Meadow_Run3", "A_Meadow_Run4", "A_Meadow_Run2", "A_Meadow_Run1", "A_Meadow_Run_Post_Box_1", "MEADOW_RUN_A", "MEADOW_RUN_B", "MEADOW_RUN_C", "MEADOW_RUN_D", "ARBOR_OAKS_A", "ARBOR_OAKS_B", "ARBOR_OAKS_C", "ARBOR_OAKS_D", "ARBOR_OAKS_E", "UNIVERSITY_VILLAGE_A", "UNIVERSITY_VILLAGE_B", "UNIVERSITY_VILLAGE_C", "UNIVERSITY_VILLAGE_D", "UNIVERSITY_VILLAGE_E", "UNIVERSITY_VILLAGE_F", "Physical Education", "OffCampus House 1", "OffCampus House 2", "TimberBrookBoundary", "TimberBrook400", "TimberBrook402", "TimberBrook404", "TimberBrook408", "TimberBrook410" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -155,7 +161,7 @@ public class main extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(71, 71, 71)
@@ -213,7 +219,7 @@ public class main extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -236,7 +242,7 @@ public class main extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(130, 130, 130)
                 .addComponent(jLabel1)
@@ -278,8 +284,8 @@ public class main extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0))
         );
 
@@ -292,14 +298,14 @@ public class main extends javax.swing.JFrame {
         try {
             main app = new main();
       
-         Connection con =  app.connect();;
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery("select p1.name , ST_Distance(p1.geom,p2.geom,true) as distance from poly as p1, poly as p2 where (ST_Distance(p1.geom,p2.geom,true) )/1000< (0.1) AND p2.name = 'GardenClub' AND (p1.b_type = 'HOUSING' OR p1.btype = 'Housing')");
-          
-          jTable1.setModel(DbUtils.resultSetToTableModel(rs));
-          
-          rs.close();
-          st.close();   
+            Connection con =  app.connect();
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery("select p1.name , ST_Distance(p1.geom,p2.geom,true)/1000 as Distance from poly as p1, poly as p2 where (ST_Distance(p1.geom,p2.geom,true) )/1000< (0.1) AND p2.name = 'GardenClub' AND (p1.b_type = 'HOUSING' OR p1.btype = 'Housing')");
+
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+
+            rs.close();
+            st.close();   
         } catch (SQLException ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -308,11 +314,30 @@ public class main extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        
+         try {
+            main app = new main();
+      
+            Connection con =  app.connect();
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery("select p1.name , ST_Distance(p1.geom,p2.geom,true)/1000 as Distance from poly as p1, poly as p2 where (ST_Distance(p1.geom,p2.geom,true) )/1000< ("+Integer.parseInt(jTextField1.getText())+") AND p2.name = 'GardenClub' AND (p1.b_type = 'HOUSING' OR p1.btype = 'Housing')");
+
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+
+            rs.close();
+            st.close();   
+        } catch (SQLException ex) {
+            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments

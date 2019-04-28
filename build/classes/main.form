@@ -45,8 +45,8 @@
               <Component id="jSeparator1" min="-2" pref="5" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
           </Group>
@@ -85,7 +85,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Component id="jTextField1" min="-2" pref="77" max="-2" attributes="0"/>
-                                  <EmptySpace pref="97" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Component id="jComboBox2" max="32767" attributes="0"/>
                           </Group>
@@ -162,7 +162,7 @@
                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="31" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -205,11 +205,63 @@
         <Component class="javax.swing.JComboBox" name="jComboBox1">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="56">
+                <StringItem index="0" value="MapleSquare"/>
+                <StringItem index="1" value="Tric"/>
+                <StringItem index="2" value="BSM"/>
+                <StringItem index="3" value="Richlynn_Apt"/>
+                <StringItem index="4" value="GardenClub"/>
+                <StringItem index="5" value="Brazos House"/>
+                <StringItem index="6" value="Thermal Plant"/>
+                <StringItem index="7" value="UTA Planetarium"/>
+                <StringItem index="8" value="Health Center"/>
+                <StringItem index="9" value="College Hall"/>
+                <StringItem index="10" value="Arlington Hall"/>
+                <StringItem index="11" value="University College"/>
+                <StringItem index="12" value="Lipscomb Hall"/>
+                <StringItem index="13" value="Woolf Hall"/>
+                <StringItem index="14" value="GeoScience Building"/>
+                <StringItem index="15" value="Science Laboratory"/>
+                <StringItem index="16" value="Engineering Research Building"/>
+                <StringItem index="17" value="Nedderman Hall"/>
+                <StringItem index="18" value="Texas hall"/>
+                <StringItem index="19" value="Davis Hall"/>
+                <StringItem index="20" value="Nanofab Building"/>
+                <StringItem index="21" value="Campus Center"/>
+                <StringItem index="22" value="Trinity House"/>
+                <StringItem index="23" value="Maverick Activity Center"/>
+                <StringItem index="24" value="A_Meadow_Run5"/>
+                <StringItem index="25" value="A_Swift_Center"/>
+                <StringItem index="26" value="A_Meadow_Run3"/>
+                <StringItem index="27" value="A_Meadow_Run4"/>
+                <StringItem index="28" value="A_Meadow_Run2"/>
+                <StringItem index="29" value="A_Meadow_Run1"/>
+                <StringItem index="30" value="A_Meadow_Run_Post_Box_1"/>
+                <StringItem index="31" value="MEADOW_RUN_A"/>
+                <StringItem index="32" value="MEADOW_RUN_B"/>
+                <StringItem index="33" value="MEADOW_RUN_C"/>
+                <StringItem index="34" value="MEADOW_RUN_D"/>
+                <StringItem index="35" value="ARBOR_OAKS_A"/>
+                <StringItem index="36" value="ARBOR_OAKS_B"/>
+                <StringItem index="37" value="ARBOR_OAKS_C"/>
+                <StringItem index="38" value="ARBOR_OAKS_D"/>
+                <StringItem index="39" value="ARBOR_OAKS_E"/>
+                <StringItem index="40" value="UNIVERSITY_VILLAGE_A"/>
+                <StringItem index="41" value="UNIVERSITY_VILLAGE_B"/>
+                <StringItem index="42" value="UNIVERSITY_VILLAGE_C"/>
+                <StringItem index="43" value="UNIVERSITY_VILLAGE_D"/>
+                <StringItem index="44" value="UNIVERSITY_VILLAGE_E"/>
+                <StringItem index="45" value="UNIVERSITY_VILLAGE_F"/>
+                <StringItem index="46" value="Physical Education"/>
+                <StringItem index="47" value="OffCampus House 1"/>
+                <StringItem index="48" value="OffCampus House 2"/>
+                <StringItem index="49" value="TimberBrookBoundary"/>
+                <StringItem index="50" value="TimberBrook400"/>
+                <StringItem index="51" value="TimberBrook402"/>
+                <StringItem index="52" value="TimberBrook404"/>
+                <StringItem index="53" value="TimberBrook408"/>
+                <StringItem index="54" value="TimberBrook410"/>
+                <StringItem index="55" value=" "/>
               </StringArray>
             </Property>
           </Properties>
@@ -225,14 +277,68 @@
         <Component class="javax.swing.JComboBox" name="jComboBox2">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="55">
+                <StringItem index="0" value="MapleSquare"/>
+                <StringItem index="1" value="Tric"/>
+                <StringItem index="2" value="BSM"/>
+                <StringItem index="3" value="Richlynn_Apt"/>
+                <StringItem index="4" value="GardenClub"/>
+                <StringItem index="5" value="Brazos House"/>
+                <StringItem index="6" value="Thermal Plant"/>
+                <StringItem index="7" value="UTA Planetarium"/>
+                <StringItem index="8" value="Health Center"/>
+                <StringItem index="9" value="College Hall"/>
+                <StringItem index="10" value="Arlington Hall"/>
+                <StringItem index="11" value="University College"/>
+                <StringItem index="12" value="Lipscomb Hall"/>
+                <StringItem index="13" value="Woolf Hall"/>
+                <StringItem index="14" value="GeoScience Building"/>
+                <StringItem index="15" value="Science Laboratory"/>
+                <StringItem index="16" value="Engineering Research Building"/>
+                <StringItem index="17" value="Nedderman Hall"/>
+                <StringItem index="18" value="Texas hall"/>
+                <StringItem index="19" value="Davis Hall"/>
+                <StringItem index="20" value="Nanofab Building"/>
+                <StringItem index="21" value="Campus Center"/>
+                <StringItem index="22" value="Trinity House"/>
+                <StringItem index="23" value="Maverick Activity Center"/>
+                <StringItem index="24" value="A_Meadow_Run5"/>
+                <StringItem index="25" value="A_Swift_Center"/>
+                <StringItem index="26" value="A_Meadow_Run3"/>
+                <StringItem index="27" value="A_Meadow_Run4"/>
+                <StringItem index="28" value="A_Meadow_Run2"/>
+                <StringItem index="29" value="A_Meadow_Run1"/>
+                <StringItem index="30" value="A_Meadow_Run_Post_Box_1"/>
+                <StringItem index="31" value="MEADOW_RUN_A"/>
+                <StringItem index="32" value="MEADOW_RUN_B"/>
+                <StringItem index="33" value="MEADOW_RUN_C"/>
+                <StringItem index="34" value="MEADOW_RUN_D"/>
+                <StringItem index="35" value="ARBOR_OAKS_A"/>
+                <StringItem index="36" value="ARBOR_OAKS_B"/>
+                <StringItem index="37" value="ARBOR_OAKS_C"/>
+                <StringItem index="38" value="ARBOR_OAKS_D"/>
+                <StringItem index="39" value="ARBOR_OAKS_E"/>
+                <StringItem index="40" value="UNIVERSITY_VILLAGE_A"/>
+                <StringItem index="41" value="UNIVERSITY_VILLAGE_B"/>
+                <StringItem index="42" value="UNIVERSITY_VILLAGE_C"/>
+                <StringItem index="43" value="UNIVERSITY_VILLAGE_D"/>
+                <StringItem index="44" value="UNIVERSITY_VILLAGE_E"/>
+                <StringItem index="45" value="UNIVERSITY_VILLAGE_F"/>
+                <StringItem index="46" value="Physical Education"/>
+                <StringItem index="47" value="OffCampus House 1"/>
+                <StringItem index="48" value="OffCampus House 2"/>
+                <StringItem index="49" value="TimberBrookBoundary"/>
+                <StringItem index="50" value="TimberBrook400"/>
+                <StringItem index="51" value="TimberBrook402"/>
+                <StringItem index="52" value="TimberBrook404"/>
+                <StringItem index="53" value="TimberBrook408"/>
+                <StringItem index="54" value="TimberBrook410"/>
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -265,11 +371,62 @@
         <Component class="javax.swing.JComboBox" name="jComboBox3">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="55">
+                <StringItem index="0" value="MapleSquare"/>
+                <StringItem index="1" value="Tric"/>
+                <StringItem index="2" value="BSM"/>
+                <StringItem index="3" value="Richlynn_Apt"/>
+                <StringItem index="4" value="GardenClub"/>
+                <StringItem index="5" value="Brazos House"/>
+                <StringItem index="6" value="Thermal Plant"/>
+                <StringItem index="7" value="UTA Planetarium"/>
+                <StringItem index="8" value="Health Center"/>
+                <StringItem index="9" value="College Hall"/>
+                <StringItem index="10" value="Arlington Hall"/>
+                <StringItem index="11" value="University College"/>
+                <StringItem index="12" value="Lipscomb Hall"/>
+                <StringItem index="13" value="Woolf Hall"/>
+                <StringItem index="14" value="GeoScience Building"/>
+                <StringItem index="15" value="Science Laboratory"/>
+                <StringItem index="16" value="Engineering Research Building"/>
+                <StringItem index="17" value="Nedderman Hall"/>
+                <StringItem index="18" value="Texas hall"/>
+                <StringItem index="19" value="Davis Hall"/>
+                <StringItem index="20" value="Nanofab Building"/>
+                <StringItem index="21" value="Campus Center"/>
+                <StringItem index="22" value="Trinity House"/>
+                <StringItem index="23" value="Maverick Activity Center"/>
+                <StringItem index="24" value="A_Meadow_Run5"/>
+                <StringItem index="25" value="A_Swift_Center"/>
+                <StringItem index="26" value="A_Meadow_Run3"/>
+                <StringItem index="27" value="A_Meadow_Run4"/>
+                <StringItem index="28" value="A_Meadow_Run2"/>
+                <StringItem index="29" value="A_Meadow_Run1"/>
+                <StringItem index="30" value="A_Meadow_Run_Post_Box_1"/>
+                <StringItem index="31" value="MEADOW_RUN_A"/>
+                <StringItem index="32" value="MEADOW_RUN_B"/>
+                <StringItem index="33" value="MEADOW_RUN_C"/>
+                <StringItem index="34" value="MEADOW_RUN_D"/>
+                <StringItem index="35" value="ARBOR_OAKS_A"/>
+                <StringItem index="36" value="ARBOR_OAKS_B"/>
+                <StringItem index="37" value="ARBOR_OAKS_C"/>
+                <StringItem index="38" value="ARBOR_OAKS_D"/>
+                <StringItem index="39" value="ARBOR_OAKS_E"/>
+                <StringItem index="40" value="UNIVERSITY_VILLAGE_A"/>
+                <StringItem index="41" value="UNIVERSITY_VILLAGE_B"/>
+                <StringItem index="42" value="UNIVERSITY_VILLAGE_C"/>
+                <StringItem index="43" value="UNIVERSITY_VILLAGE_D"/>
+                <StringItem index="44" value="UNIVERSITY_VILLAGE_E"/>
+                <StringItem index="45" value="UNIVERSITY_VILLAGE_F"/>
+                <StringItem index="46" value="Physical Education"/>
+                <StringItem index="47" value="OffCampus House 1"/>
+                <StringItem index="48" value="OffCampus House 2"/>
+                <StringItem index="49" value="TimberBrookBoundary"/>
+                <StringItem index="50" value="TimberBrook400"/>
+                <StringItem index="51" value="TimberBrook402"/>
+                <StringItem index="52" value="TimberBrook404"/>
+                <StringItem index="53" value="TimberBrook408"/>
+                <StringItem index="54" value="TimberBrook410"/>
               </StringArray>
             </Property>
           </Properties>
@@ -285,11 +442,62 @@
         <Component class="javax.swing.JComboBox" name="jComboBox4">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="55">
+                <StringItem index="0" value="MapleSquare"/>
+                <StringItem index="1" value="Tric"/>
+                <StringItem index="2" value="BSM"/>
+                <StringItem index="3" value="Richlynn_Apt"/>
+                <StringItem index="4" value="GardenClub"/>
+                <StringItem index="5" value="Brazos House"/>
+                <StringItem index="6" value="Thermal Plant"/>
+                <StringItem index="7" value="UTA Planetarium"/>
+                <StringItem index="8" value="Health Center"/>
+                <StringItem index="9" value="College Hall"/>
+                <StringItem index="10" value="Arlington Hall"/>
+                <StringItem index="11" value="University College"/>
+                <StringItem index="12" value="Lipscomb Hall"/>
+                <StringItem index="13" value="Woolf Hall"/>
+                <StringItem index="14" value="GeoScience Building"/>
+                <StringItem index="15" value="Science Laboratory"/>
+                <StringItem index="16" value="Engineering Research Building"/>
+                <StringItem index="17" value="Nedderman Hall"/>
+                <StringItem index="18" value="Texas hall"/>
+                <StringItem index="19" value="Davis Hall"/>
+                <StringItem index="20" value="Nanofab Building"/>
+                <StringItem index="21" value="Campus Center"/>
+                <StringItem index="22" value="Trinity House"/>
+                <StringItem index="23" value="Maverick Activity Center"/>
+                <StringItem index="24" value="A_Meadow_Run5"/>
+                <StringItem index="25" value="A_Swift_Center"/>
+                <StringItem index="26" value="A_Meadow_Run3"/>
+                <StringItem index="27" value="A_Meadow_Run4"/>
+                <StringItem index="28" value="A_Meadow_Run2"/>
+                <StringItem index="29" value="A_Meadow_Run1"/>
+                <StringItem index="30" value="A_Meadow_Run_Post_Box_1"/>
+                <StringItem index="31" value="MEADOW_RUN_A"/>
+                <StringItem index="32" value="MEADOW_RUN_B"/>
+                <StringItem index="33" value="MEADOW_RUN_C"/>
+                <StringItem index="34" value="MEADOW_RUN_D"/>
+                <StringItem index="35" value="ARBOR_OAKS_A"/>
+                <StringItem index="36" value="ARBOR_OAKS_B"/>
+                <StringItem index="37" value="ARBOR_OAKS_C"/>
+                <StringItem index="38" value="ARBOR_OAKS_D"/>
+                <StringItem index="39" value="ARBOR_OAKS_E"/>
+                <StringItem index="40" value="UNIVERSITY_VILLAGE_A"/>
+                <StringItem index="41" value="UNIVERSITY_VILLAGE_B"/>
+                <StringItem index="42" value="UNIVERSITY_VILLAGE_C"/>
+                <StringItem index="43" value="UNIVERSITY_VILLAGE_D"/>
+                <StringItem index="44" value="UNIVERSITY_VILLAGE_E"/>
+                <StringItem index="45" value="UNIVERSITY_VILLAGE_F"/>
+                <StringItem index="46" value="Physical Education"/>
+                <StringItem index="47" value="OffCampus House 1"/>
+                <StringItem index="48" value="OffCampus House 2"/>
+                <StringItem index="49" value="TimberBrookBoundary"/>
+                <StringItem index="50" value="TimberBrook400"/>
+                <StringItem index="51" value="TimberBrook402"/>
+                <StringItem index="52" value="TimberBrook404"/>
+                <StringItem index="53" value="TimberBrook408"/>
+                <StringItem index="54" value="TimberBrook410"/>
               </StringArray>
             </Property>
           </Properties>
@@ -304,7 +512,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jScrollPane2" alignment="0" pref="400" max="32767" attributes="0"/>
+              <Component id="jScrollPane2" alignment="0" pref="371" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
