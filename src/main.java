@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import net.proteanit.sql.DbUtils;
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -300,14 +301,13 @@ public class main extends javax.swing.JFrame {
       
             Connection con =  app.connect();
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select p1.name , ST_Distance(p1.geom,p2.geom,true)/1000 as Distance from poly as p1, poly as p2 where (ST_Distance(p1.geom,p2.geom,true) )/1000< (0.1) AND p2.name = 'GardenClub' AND (p1.b_type = 'HOUSING' OR p1.btype = 'Housing')");
-
-            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
-
-            rs.close();
+            st.executeQuery("CREATE VIEW "+jComboBox1.getSelectedItem().toString()+" AS select * from poly as p1 where p1.name = '"+jComboBox1.getSelectedItem().toString()+"'");
+                
             st.close();   
         } catch (SQLException ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        }finally{
+            JOptionPane.showMessageDialog(null, "Layer have been successfully uploaded to QGIS!", "QGIS", JOptionPane.INFORMATION_MESSAGE);
         }
        
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -320,7 +320,7 @@ public class main extends javax.swing.JFrame {
       
             Connection con =  app.connect();
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select p1.name , ST_Distance(p1.geom,p2.geom,true)/1000 as Distance from poly as p1, poly as p2 where (ST_Distance(p1.geom,p2.geom,true) )/1000< ("+Integer.parseInt(jTextField1.getText())+") AND p2.name = 'GardenClub' AND (p1.b_type = 'HOUSING' OR p1.btype = 'Housing')");
+            ResultSet rs = st.executeQuery("select p1.name , ST_Distance(p1.geom,p2.geom,true)/1000 as Distance from poly as p1, poly as p2 where (ST_Distance(p1.geom,p2.geom,true) )/1000< ("+jTextField1.getText()+") AND p2.name = '"+jComboBox2.getSelectedItem().toString()+"' AND (p1.b_type = 'HOUSING' OR p1.btype = 'Housing')");
 
             jTable1.setModel(DbUtils.resultSetToTableModel(rs));
 
